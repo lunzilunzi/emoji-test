@@ -7,11 +7,5 @@ module.exports = {
   // https://stylelint.io/user-guide/configuration
   rules: {},
   // 需要忽略的文件
-  ignoreFiles: [
-    '*.js',
-    '*.json',
-    'static/**',
-    'static/**',
-    'static/**',
-  ],
+  ignoreFiles: ['*.js', '*.json', 'static/**'],
 }
