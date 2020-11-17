@@ -1,4 +1,6 @@
-module.exports = {
+import type { Config } from '@jest/types'
+
+const config: Config.InitialOptions = {
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
@@ -16,3 +18,4 @@ module.exports = {
     '<rootDir>/pages/**/*.vue',
   ],
 }
+export default config

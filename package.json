@@ -1,9 +1,10 @@
 {
-  "name": "lunzi-blog-webui-vuetity",
+  "name": "lunzi-blog-webui",
+  "description": "伦子的博客，前端ui项目",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
+    "dev": "cross-env START_MODE=dev nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
@@ -23,6 +24,7 @@
     "@nuxt/typescript-runtime": "^2.0.0",
     "@nuxtjs/axios": "^5.12.2",
     "core-js": "^3.6.5",
+    "cross-env": "^7.0.2",
     "nuxt": "^2.14.6"
   },
   "devDependencies": {

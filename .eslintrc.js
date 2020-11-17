@@ -15,10 +15,5 @@ module.exports = {
   // add your custom rules here
   rules: {},
   // 添加排除文件
-  overrides: [
-    {
-      files: ['*.js'],
-      excludedFiles: '*.test.js',
-    },
-  ],
+  overrides: [],
 }

@@ -1,16 +1,40 @@
-import colors from 'vuetify/es5/util/colors'
+import NuxtConfiguration from '@nuxt/config'
 
-export default {
+import envConfig, { NuxtEnvironmentConfig } from './nuxt.environment'
+
+// @ts-ignore
+const env: NuxtEnvironmentConfig = envConfig[process.env.START_MODE]
+
+// @ts-ignore
+const nuxtConfig: NuxtConfiguration = {
+  server: {
+    port: env.PORT,
+    host: env.HOST,
+  },
+
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     titleTemplate: '%s - lunzi-blog-webui-vuetity',
     title: 'lunzi-blog-webui-vuetity',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: '',
+      },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -48,23 +72,10 @@ export default {
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: false,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3,
-        },
-      },
-    },
+    optionsPath: './plugins/vuetify.js',
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 }
+export default nuxtConfig

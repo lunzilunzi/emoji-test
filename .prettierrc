@@ -1,4 +1,8 @@
 {
+  "printWidth": 60,
+  "proseWrap": "never",
   "semi": false,
-  "singleQuote": true
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "trailingComma": "es5"
 }
