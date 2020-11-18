@@ -3,9 +3,9 @@
 ### 目录结构说明 
 
 <table>
-    <tr>
-        <th>Month</th>
-        <th>Savings</th>
+    <tr align="left">
+        <th>目录名或文件名</th>
+        <th>功能描述</th>
     </tr>
     <tr>
         <td>
@@ -27,7 +27,6 @@
 ├── .prettierrc<br>
 ├── commitlint.config.js<br>
 ├── jest.config.js<br>
-├── jsconfig.json<br>
 ├── nuxt.config.js<br>
 ├── package.json<br>
 ├── README.md<br>
@@ -54,7 +53,6 @@ git忽略更新的配置文件<br>
 prettier代码格式化工具配置文件<br>
 git commit 信息格式检测工具配置文件<br>
 jest测试框架配置文件<br>
-<br>
 nuxt配置文件<br>
 依赖管理文件<br>
 项目主文档<br>

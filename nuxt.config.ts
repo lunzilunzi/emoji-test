@@ -1,15 +1,18 @@
 import NuxtConfiguration from '@nuxt/config'
 
-import envConfig, { NuxtEnvironmentConfig } from './nuxt.environment'
+// import envConfig, { NuxtEnvironmentConfig } from './nuxt.environment'
+import envConfig from './nuxt.env'
 
 // @ts-ignore
-const env: NuxtEnvironmentConfig = envConfig[process.env.START_MODE]
+// const env: NuxtEnvironmentConfig = envConfig[process.env.START_MODE]
 
 // @ts-ignore
 const nuxtConfig: NuxtConfiguration = {
   server: {
-    port: env.PORT,
-    host: env.HOST,
+    // @ts-ignore
+    port: envConfig[process.env.START_MODE].PORT,
+    // @ts-ignore
+    host: envConfig[process.env.START_MODE].HOST,
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
