@@ -17,7 +17,7 @@ export { NuxtEnvironmentConfig }
 
 const dev = new NuxtEnvironmentConfig(
   '开发环境',
-  6000,
+  7000,
   defaultBindHost,
   'http://localhost:8080'
 )
