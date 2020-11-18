@@ -6,6 +6,7 @@ module.exports = {
       [
         ':art:',
         ':newspaper:',
+        // coding不可用
         ':pencil:',
         ':memo:',
         ':zap:',
@@ -16,8 +17,10 @@ module.exports = {
         ':penguin:',
         ':apple:',
         ':checkered_flag:',
+        // coding不可用
         ':robot:',
-        ':green_ale:',
+        // 完全不可用
+        // ':green_ale:',
         ':tractor:',
         ':recycle:',
         ':white_check_mark:',
@@ -36,6 +39,7 @@ module.exports = {
         ':gem:',
         ':bookmark:',
         ':tada:',
+        // coding不可用
         ':loud_sound:',
         ':mute:',
         ':sparkles:',
@@ -56,31 +60,37 @@ module.exports = {
         ':pushpin:',
         ':busts_in_silhouette:',
         ':children_crossing:',
+        // coding不可用
         ':building_construction:',
         ':iphone:',
+        // coding不可用
         ':clown_face:',
         ':ok_hand:',
+        // coding不可用
         ':boom:',
         ':bento:',
         ':pencil2:',
         ':package:',
         ':alien:',
         ':truck:',
-        ':age_facing_up:',
+        // 完全不可用
+        // ':age_facing_up:',
         ':busts_in_silhouette:',
+        // coding不可用
         ':card_file_box:',
+        // coding不可用
         ':loud_sound:',
-        ':loud-sound:',
         ':mute:',
         ':egg:',
         ':see_no_evil:',
-        ':see-no-evil:',
+        // coding不可用
         ':camera_flash:',
-        ':camera-flash:',
+        // coding不可用
         ':alembic:',
         ':mag:',
+        // coding不可用
         ':wheel_of_dharma:',
-        ':wheel-of-dharma:',
+        // coding不可用
         ':label:',
       ],
     ],

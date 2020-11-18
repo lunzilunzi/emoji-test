@@ -6,7 +6,12 @@ class NuxtEnvironmentConfig {
   HOST: string
   API_BASE_URL: string
 
-  constructor(DESC: string, PORT: number, HOST: string, API_BASE_URL: string) {
+  constructor(
+    DESC: string,
+    PORT: number,
+    HOST: string,
+    API_BASE_URL: string
+  ) {
     this.DESC = DESC
     this.PORT = PORT
     this.HOST = HOST
